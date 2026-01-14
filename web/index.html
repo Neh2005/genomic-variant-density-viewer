@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Genomic Variant Density Viewer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Genomic Variant Density Viewer</h1>
+      <p>Interactive exploration of genomic variant density using Rust + WebAssembly</p>
+    </header>
+
+    <div class="controls">
+      <label>Upload dataset:</label>
+      <input type="file" id="fileInput" />
+
+      <label>Chromosome:</label>
+      <select id="chromosomeSelect" disabled></select>
+
+      <label>Bin size:</label>
+      <select id="binSizeSelect">
+        <option value="100000">100 kb</option>
+        <option value="500000">500 kb</option>
+        <option value="1000000" selected>1 Mb</option>
+      </select>
+    </div>
+
+    <p id="status">Upload a dataset to begin analysis.</p>
+    <p id="perf"></p>
+
+    <div class="chart-container">
+      <div class="chart-scroll">
+        <canvas id="chart" height="300"></canvas>
+      </div>
+      <div class="axis-labels">
+        <span>Genomic position (binned)</span>
+        <span class="y-axis">Variant count (log scale)</span>
+      </div>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <footer>
+      Adaptive rendering: detailed for small datasets, aggregated for large datasets
+    </footer>
+
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
