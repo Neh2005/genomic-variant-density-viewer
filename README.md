@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Genomic Variant Density Viewer</title>
+
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
@@ -47,15 +48,13 @@
 
   <p>
     This project is an interactive, browser-based prototype for visualising
-    <strong>genomic variant density</strong> across chromosomes using
-    <strong>Rust compiled to WebAssembly (WASM)</strong> and a lightweight
-    JavaScript frontend.
+    genomic variant density across chromosomes using Rust compiled to
+    WebAssembly (WASM) and a lightweight JavaScript frontend.
   </p>
 
   <p>
-    The goal is to explore how modern web technologies can support
-    large-scale genomic data visualisation while keeping all computation
-    client-side.
+    The goal is to explore how modern web technologies can support large-scale
+    genomic data visualisation while keeping all computation client-side.
   </p>
 
   <div class="section">
@@ -94,9 +93,7 @@
       traditional rendering leads to sparse or misleading charts.
     </p>
 
-    <p>
-      This project automatically switches rendering strategy:
-    </p>
+    <p>This project automatically switches rendering strategy:</p>
 
     <ul>
       <li>
@@ -110,8 +107,8 @@
     </ul>
 
     <p>
-      This approach mirrors techniques used in professional genome browsers such
-      as Ensembl and UCSC.
+      This approach mirrors techniques used in professional genome browsers
+      such as Ensembl and UCSC.
     </p>
   </div>
 
@@ -125,7 +122,6 @@
       <li>Rust compiled to WebAssembly</li>
       <li>Pure JavaScript</li>
     </ul>
-
     <p>
       This allows direct comparison of performance trade-offs within the same
       application.
@@ -134,9 +130,6 @@
 
   <div class="section">
     <h2>🗂️ Project Structure</h2>
-    <p>
-      The project is organised into a frontend and a WebAssembly module:
-    </p>
     <ul>
       <li><strong>web/</strong> – HTML, CSS, and JavaScript frontend</li>
       <li><strong>wasm/</strong> – Rust code compiled to WebAssembly</li>
@@ -151,7 +144,6 @@
       frontend. The frontend is served locally using a modern JavaScript
       development server.
     </p>
-
     <p>
       Once running, users can upload a CSV file, select a chromosome, adjust bin
       sizes, and explore variant density interactively in the browser.
@@ -160,9 +152,7 @@
 
   <div class="section">
     <h2>📁 Input Data Format</h2>
-    <p>
-      The application expects a CSV file with at least the following columns:
-    </p>
+    <p>The application expects a CSV file with at least the following columns:</p>
 
     <div class="example">
       chromosome,position<br>
@@ -184,8 +174,8 @@
     <h2>🌱 Motivation</h2>
     <p>
       This project reflects my interest in genomics and computational biology,
-      supported by an academic background in biology at A-level, and my desire to
-      apply modern web engineering techniques to scientific data.
+      supported by an academic background in biology at A-level, and my desire
+      to apply modern web engineering techniques to scientific data.
     </p>
   </div>
 
