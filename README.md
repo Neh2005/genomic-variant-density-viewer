@@ -116,4 +116,4 @@ This makes the tool suitable for exploratory analysis without data governance co
 
 ## 🌱 Motivation
 
-This project reflects my interest in genomics and computational biology, supported by an academic background in biology at A-level, and my desire to apply modern web engineering techniques to scientific data.
+This project grew out of my interest in genomics and computational biology. I studied biology at A-level, and I wanted to explore how modern web technologies like Rust and WebAssembly can be used to work with and visualise real biological data in an interactive way.
