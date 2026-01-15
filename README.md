@@ -69,14 +69,13 @@ This allows direct comparison of performance trade-offs within the same applicat
 
 ### Prerequisites
 
-- Node.js (v18+ recommended)  
-- Rust (stable)  
-- wasm-pack  
+- Node.js (v18+ recommended)
+- Rust (stable)
+- wasm-pack
 
 Install wasm-pack if needed:
 
-```bash
-cargo install wasm-pack
+    cargo install wasm-pack
 
 ### Build the WebAssembly module
 
@@ -93,7 +92,7 @@ Open the local URL shown in the terminal (usually http://localhost:5173).
 
 ---
 
-## Input Data Format
+## 📁 Input Data Format
 
 The application expects a CSV file with at least the following columns:
 
@@ -106,7 +105,7 @@ Large public datasets (for example, ClinVar) can be used directly.
 
 ---
 
-## Data Privacy
+## 🔐 Data Privacy
 
 All data processing happens entirely in the browser.
 
@@ -118,8 +117,6 @@ This makes the tool suitable for exploratory analysis without data governance co
 
 ---
 
-## Motivation
+## 🌱 Motivation
 
 This project reflects my interest in genomics and computational biology, supported by an academic background in biology at A-level, and my desire to apply modern web engineering techniques to scientific data.
-
-
