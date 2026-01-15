@@ -62,9 +62,6 @@ This allows direct comparison of performance trade-offs within the same applicat
 
 ---
 
-
----
-
 ## ▶️ Running the Project Locally
 
 ### Prerequisites
